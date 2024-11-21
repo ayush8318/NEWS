@@ -27,7 +27,7 @@ return string.charAt(0).toUpperCase()+ string.slice(1);
 const updatenews=async()=>{
       props.setprogress(10);
     
-      let url=`http://newsapi.org/v2/top-headlines?&category=${props.category}&apiKey=${props.apikey}&page=${page}&pageSize=${props.pageSize}`;
+      let url=`https://newsapi.org/v2/top-headlines?&category=${props.category}&apiKey=${props.apikey}&page=${page}&pageSize=${props.pageSize}`;
        setloading(true);
       let data=await fetch(url);
       props.setprogress(30);
